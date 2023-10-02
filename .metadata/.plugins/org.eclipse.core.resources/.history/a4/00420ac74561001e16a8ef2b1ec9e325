@@ -1,0 +1,31 @@
+#include "dsk6713_aic23.h"
+
+#define BUFFERLENGTH 256 
+
+Uint32 fs=DSK6713_AIC23_FREQ_8KHZ; 
+
+int loop = 0; 
+short gain = 1;
+short sine_table[8]={0,707,1000,707,0,-707,-1000,-707};
+short out_buffer[BUFFERLENGTH];
+int i = 0;
+
+interrupt void c_int11()
+{
+	float sample = gain*sin((2*3.14f*i*120/BUFFERLENGTH));
+	int s = (int)sample;
+	short sint = s;
+	output_sample(sint);
+	//out_buffer[i] = sine_table[loop]*gain;
+	out_buffer[i] = (int)sin((2*3.14f*i*120/BUFFERLENGTH))/32768;
+	i++; 
+	if(i==BUFFERLENGTH) i=0; 
+	if (++loop > 7) loop = 0; 
+	return;
+}
+
+void main()
+{
+	comm_intr(); 
+	while(1); 
+}

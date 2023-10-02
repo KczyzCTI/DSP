@@ -719,3 +719,42 @@ org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://so
 
 !ENTRY org.eclipse.cdt.core 1 0 2023-10-02 18:03:00.050
 !MESSAGE Indexed 'DSP' (1 sources, 0 headers) in 0.01 sec: 2 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0.00%)
+
+!ENTRY org.eclipse.jface 2 0 2023-10-02 18:30:02.790
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-02 18:30:02.790
+!MESSAGE A conflict occurred for END:
+Binding(END,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.text.goto.lineEnd,Line End,
+		Go to the end of the line of text,
+		Category(org.eclipse.ui.category.textEditor,Text Editing,Text Editing Commands,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@df248d,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.textEditorScope,,,system)
+Binding(END,
+	ParameterizedCommand(Command(com.ti.dvt.ui.view.end,End,
+		remove selection key,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d8dfe6,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ti.dvt.ui.view.dataview,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2023-10-02 18:30:02.790
+!MESSAGE A conflict occurred for CTRL+T:
+Binding(CTRL+T,
+	ParameterizedCommand(Command(org.eclipse.cdt.ui.edit.open.quick.type.hierarchy,Quick Type Hierarchy,
+		Shows quick type hierarchy,
+		Category(org.eclipse.cdt.ui.category.source,C/C++ Source,C/C++ Source Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1538145,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.cdt.ui.cEditorScope,,,system)
+Binding(CTRL+T,
+	ParameterizedCommand(Command(com.ti.dvt.ui.view.filterExpr,Set Filter Expression,
+		Set filter expression on this view,
+		Category(org.eclipse.ui.category.views,Views,Commands for opening views,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@14be914,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.ti.dvt.ui.view.dataview,,,system)
