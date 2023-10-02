@@ -432,7 +432,7 @@ hotmenu QuickTest()
 }
 
 menuitem "Sine Gain"
-slider Gain(0,1000,100,1,gain_parameter) /*incr by 5,up to 35*/
+slider Gain(10,35,5,1,gain_parameter) /*incr by 5,up to 35*/
 {
 gain = gain_parameter; /*vary gain of sine*/
 }

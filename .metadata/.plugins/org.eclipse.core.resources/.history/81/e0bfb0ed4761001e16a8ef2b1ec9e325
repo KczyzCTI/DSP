@@ -430,9 +430,3 @@ hotmenu QuickTest()
     GEL_TextOut(" Switches: %d  Board Revision: %d CPLD Revision: %d\n\n",
                  "DSKOutput", 1, 1, 1, Get_Switches, Get_Board_Rev, Get_Cpld_Rev);
 }
-
-menuitem "Sine Gain"
-slider Gain(0,1000,100,1,gain_parameter) /*incr by 5,up to 35*/
-{
-gain = gain_parameter; /*vary gain of sine*/
-}

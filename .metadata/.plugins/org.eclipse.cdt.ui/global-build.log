@@ -2,31 +2,6 @@
 **** Build of configuration Debug for project DSP ****
 
 "c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
-'Building file: ../main.c'
-'Invoking: C6000 Compiler'
-"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/bin/cl6x" -mv6700 --abi=coffabi -g --include_path="c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include" --define=c6713 --define=CHIP_6713 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
-"../main.c", line 19: warning #225-D: function declared implicitly
-"../main.c", line 30: warning #225-D: function declared implicitly
-'Finished building: ../main.c'
-' '
-'Building target: DSP.out'
-'Invoking: C6000 Linker'
-"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/bin/cl6x" -mv6700 --abi=coffabi -g --define=c6713 --define=CHIP_6713 --display_error_number --diag_warning=225 --diag_wrap=off -z --stack_size=0x800 -m"DSP.map" --heap_size=0x800 -i"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/lib" -i"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="DSP_linkInfo.xml" --rom_model -o "DSP.out"  "./main.obj" "./c6713dskinit.obj" "./Vectors_intr.obj" "../C6713dsk.cmd" -l"libc.a" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713e.lib" 
-<Linking>
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib<csl_irq.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib<csl_mcbsp.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_opencodec.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_registers.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_setfreq.obj>": compatibility cannot be determined
-'Finished building target: DSP.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project DSP ****
-
-"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
 gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
@@ -34,74 +9,6 @@ gmake: Nothing to be done for `all'.
 **** Build of configuration Debug for project DSP ****
 
 "c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
-'Building file: ../main.c'
-'Invoking: C6000 Compiler'
-"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/bin/cl6x" -mv6700 --abi=coffabi -g --include_path="c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include" --define=c6713 --define=CHIP_6713 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
-"../main.c", line 19: warning #225-D: function declared implicitly
-"../main.c", line 30: warning #225-D: function declared implicitly
-'Finished building: ../main.c'
-' '
-'Building target: DSP.out'
-'Invoking: C6000 Linker'
-"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/bin/cl6x" -mv6700 --abi=coffabi -g --define=c6713 --define=CHIP_6713 --display_error_number --diag_warning=225 --diag_wrap=off -z --stack_size=0x800 -m"DSP.map" --heap_size=0x800 -i"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/lib" -i"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="DSP_linkInfo.xml" --rom_model -o "DSP.out"  "./main.obj" "./c6713dskinit.obj" "./Vectors_intr.obj" "../C6713dsk.cmd" -l"libc.a" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713e.lib" 
-<Linking>
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib<csl_irq.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib<csl_mcbsp.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_opencodec.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_registers.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_setfreq.obj>": compatibility cannot be determined
-'Finished building target: DSP.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project DSP ****
-
-"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
-'Building file: ../main.c'
-'Invoking: C6000 Compiler'
-"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/bin/cl6x" -mv6700 --abi=coffabi -g --include_path="c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include" --define=c6713 --define=CHIP_6713 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
-"../main.c", line 19: warning #225-D: function declared implicitly
-"../main.c", line 30: warning #225-D: function declared implicitly
-'Finished building: ../main.c'
-' '
-'Building target: DSP.out'
-'Invoking: C6000 Linker'
-"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/bin/cl6x" -mv6700 --abi=coffabi -g --define=c6713 --define=CHIP_6713 --display_error_number --diag_warning=225 --diag_wrap=off -z --stack_size=0x800 -m"DSP.map" --heap_size=0x800 -i"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/lib" -i"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="DSP_linkInfo.xml" --rom_model -o "DSP.out"  "./main.obj" "./c6713dskinit.obj" "./Vectors_intr.obj" "../C6713dsk.cmd" -l"libc.a" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713e.lib" 
-<Linking>
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib<csl_irq.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib<csl_mcbsp.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_opencodec.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_registers.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_setfreq.obj>": compatibility cannot be determined
-'Finished building target: DSP.out'
-' '
-
-**** Build Finished ****
-
-**** Build of configuration Debug for project DSP ****
-
-"c:\\ti\\ccsv6\\utils\\bin\\gmake" -k all 
-'Building file: ../main.c'
-'Invoking: C6000 Compiler'
-"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/bin/cl6x" -mv6700 --abi=coffabi -g --include_path="c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include" --define=c6713 --define=CHIP_6713 --display_error_number --diag_warning=225 --diag_wrap=off --preproc_with_compile --preproc_dependency="main.pp"  "../main.c"
-"../main.c", line 19: warning #225-D: function declared implicitly
-"../main.c", line 30: warning #225-D: function declared implicitly
-'Finished building: ../main.c'
-' '
-'Building target: DSP.out'
-'Invoking: C6000 Linker'
-"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/bin/cl6x" -mv6700 --abi=coffabi -g --define=c6713 --define=CHIP_6713 --display_error_number --diag_warning=225 --diag_wrap=off -z --stack_size=0x800 -m"DSP.map" --heap_size=0x800 -i"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/lib" -i"c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include" --reread_libs --warn_sections --display_error_number --diag_wrap=off --xml_link_info="DSP_linkInfo.xml" --rom_model -o "DSP.out"  "./main.obj" "./c6713dskinit.obj" "./Vectors_intr.obj" "../C6713dsk.cmd" -l"libc.a" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713e.lib" 
-<Linking>
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib<csl_irq.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib<csl_mcbsp.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_opencodec.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_registers.obj>": compatibility cannot be determined
-warning #16002-D: build attribute vendor section TI missing in "C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib<dsk6713_aic23_setfreq.obj>": compatibility cannot be determined
-'Finished building target: DSP.out'
-' '
+gmake: Nothing to be done for `all'.
 
 **** Build Finished ****
