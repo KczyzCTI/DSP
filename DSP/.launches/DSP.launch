@@ -5,7 +5,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROGRAM.Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator_0/TMS320C671X" value="${build_artifact:DSP}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator_0/TMS320C671X" value="DSP"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:DSP}"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator_0/TMS320C671X" value="C:/Users\student\Desktop\ArkadiuszGdyniia\DSP\Debug\DSP.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.Spectrum Digital DSK-EVM-eZdsp onboard USB Emulator_0/TMS320C671X" value="C:/Users\235768\Desktop\ArkadiuszGdyniia\DSP\DSP\Debug\DSP.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/DSP"/>
 </listAttribute>

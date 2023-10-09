@@ -16,6 +16,7 @@ main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/csl_timer.h
 main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/csl_timerhal.h
 main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/csl_mcbsp.h
 main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/csl_mcbsphal.h
+main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/dsk6713_flash.h
 main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/math.h
 main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/float.h
 main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/access.h
@@ -25,6 +26,7 @@ main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/mathf.h
 main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/unaccess.h
 main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/mathl.h
 main.obj: c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/unaccess.h
+main.obj: ../__LIB__/DBuff.h
 
 ../main.c: 
 ../dsk6713_aic23.h: 
@@ -42,6 +44,7 @@ c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/csl_timer.h:
 c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/csl_timerhal.h: 
 c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/csl_mcbsp.h: 
 c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/csl_mcbsphal.h: 
+c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/dsk6713_flash.h: 
 c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/math.h: 
 c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/float.h: 
 c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/access.h: 
@@ -51,3 +54,4 @@ c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/mathf.h:
 c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/unaccess.h: 
 c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/mathl.h: 
 c:/ti/ccsv6/tools/compiler/c6000_7.4.7/include/unaccess.h: 
+../__LIB__/DBuff.h: 

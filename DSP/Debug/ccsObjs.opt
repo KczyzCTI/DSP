@@ -1,1 +1,1 @@
-"./main.obj" "./c6713dskinit.obj" "./Vectors_intr.obj" "../C6713dsk.cmd" -l"libc.a" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713e.lib" 
+"./__LIB__/DBuff.obj" "./main.obj" "./c6713dskinit.obj" "./Vectors_intr.obj" "../C6713dsk.cmd" -l"libc.a" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\dsk6713bsl.lib" -l"C:\ti\ccsv6\tools\compiler\c6000_7.4.7\lib\csl6713e.lib" 
