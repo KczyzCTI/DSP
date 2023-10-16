@@ -12,7 +12,36 @@ short sine_table[8]={0,707,1000,707,0,-707,-1000,-707};
 short out_buffer[BUFFERLENGTH];
 int i = 0;
 short input;
-Buffer_t jehany_buffer;
+Buffer_t jehany_buffer, buhany_jeffer;
+
+short period[LDB_PERIOD];
+
+short* wrap(int _D, short *w, short *p){
+	if(p-w > _D){
+		return 0;
+	}
+	else{
+		return (w+*p);
+	}
+}
+int Buffer_wrap(unsigned short _D, Buffer_t* buf)
+{
+	buf->rx = _D;
+	if(_D >= LDB_PERIOD*LDB_CAPACITY){
+		_D -= LDB_PERIOD*LDB_CAPACITY;
+	}
+}
+int Buffer_wrapP(unsigned short _D, Buffer_t* buf)
+{
+	short val = LDB_CAPACITY-_D;
+	if (val<0){
+		val =0;
+	}
+	buf->rx = val*LDB_PERIOD;
+	if(buf->rx >= LDB_PERIOD*LDB_CAPACITY){
+		buf->rx = 0;
+	}
+}
 
 
 interrupt void c_int11()
@@ -22,34 +51,16 @@ interrupt void c_int11()
 	short sint = s;
 	input =input_sample();
 	Buffer_push(input, &jehany_buffer);
-	{
-		int ii=0;
-		for(;ii<16000; ii++)
-		{
-			Buffer_push(0, &jehany_buffer);
-		}
-		Buffer_push(input, &jehany_buffer);
-		ii =0;
-		for(;ii<2000+2;ii++)
-		{
-			Buffer_pop(&sint, &jehany_buffer);
-			output_sample(sint);
-		}
-	}
-
-
-
-	//out_buffer[i] = sine_table[loop]*gain;
-	out_buffer[i] = (int)sin((2*3.14f*i*60/BUFFERLENGTH))/32768;
-	i++; 
-	if(i==BUFFERLENGTH) i=0; 
-	if (++loop > 7) loop = 0; 
+	Buffer_pop(&input, &jehany_buffer);
+	output_sample(input);
 	return;
 }
 
 void main()
 {
 	Buffer_init(&jehany_buffer);
+	Buffer_wrap(1, &jehany_buffer);
+	Buffer_init(&buhany_jeffer);
 	comm_intr(); 
 	while(1); 
 }
