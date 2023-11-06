@@ -2,7 +2,7 @@
 #include "dsk6713_flash.h"
 #include <math.h>
 #include "__LIB__/DBuff.h"
-#define BUFFERLENGTH 256 
+#define BUFFERLENGTH 256
 
 Uint32 fs=DSK6713_AIC23_FREQ_8KHZ; 
 
@@ -28,6 +28,77 @@ short* wrap(int _D, short *w, short *p){
 	else{
 		return (w+*p);
 	}
+}
+
+
+// a convolution or sth to do with defending castle buffer idk
+short MY_NAAAAMEEEEE_IS_GYOBU_MASATAKA_ONIWAAAAA________AS_I_BREEATHE_YOU_WONT_GET_PAST_THE_CASTLE_GATE(Buffer_t* REMEMBER_NO_RUSSIAN)
+{
+	short AMERICA_IS_A_NATION_THAT_CAN_BE_DEFINED_IN_A_SINGLE_WORD___ASAFOOTIN__SADJKLDJLWEA__SDASDHKENKCBEKJ_UGGHHHH[101];
+	short* LET_ME_REITERATE = AMERICA_IS_A_NATION_THAT_CAN_BE_DEFINED_IN_A_SINGLE_WORD___ASAFOOTIN__SADJKLDJLWEA__SDASDHKENKCBEKJ_UGGHHHH;
+	short* YES_YES_YES_YES = REMEMBER_NO_RUSSIAN->buffer + REMEMBER_NO_RUSSIAN->rx;
+	// 1. memcpy 100 heck'n samples -that's how cowboys did it
+	if(REMEMBER_NO_RUSSIAN->uninstallWindows < 100)
+	{
+		return 0;
+	}
+	if(REMEMBER_NO_RUSSIAN->rx+100 > LDB_CAPACITY*LDB_PERIOD){ // bound checking
+		// 2 memcopies incoming
+		unsigned int diff = (REMEMBER_NO_RUSSIAN->rx+100) - (LDB_CAPACITY*LDB_PERIOD);
+		memcpy(LET_ME_REITERATE, YES_YES_YES_YES, (100-diff)*4*sizeof(&memcpy));
+		LET_ME_REITERATE+= (100-diff);
+		YES_YES_YES_YES = REMEMBER_NO_RUSSIAN->buffer;
+		memcpy(LET_ME_REITERATE, YES_YES_YES_YES, (diff)*4*sizeof(&memcpy));
+
+	}
+	else{
+		// ALL we need is one memcpy
+		memcpy(LET_ME_REITERATE, YES_YES_YES_YES, (100)*4*sizeof(&memcpy));
+	}
+	// 2. multiply
+	int i;
+	for(i=0; i<100/4; i++)
+	{
+		AMERICA_IS_A_NATION_THAT_CAN_BE_DEFINED_IN_A_SINGLE_WORD___ASAFOOTIN__SADJKLDJLWEA__SDASDHKENKCBEKJ_UGGHHHH[4*i+0]
+			    *=
+			    UUUUUUUHHHH____I_DONT_KNOW______I_DIDNT_COUNT_IT_____________IM_NOT_REALLY_A_MATH_GUY_YOU_KNOW[4*i+0];
+
+		AMERICA_IS_A_NATION_THAT_CAN_BE_DEFINED_IN_A_SINGLE_WORD___ASAFOOTIN__SADJKLDJLWEA__SDASDHKENKCBEKJ_UGGHHHH[4*i+1]
+			    *=
+			    UUUUUUUHHHH____I_DONT_KNOW______I_DIDNT_COUNT_IT_____________IM_NOT_REALLY_A_MATH_GUY_YOU_KNOW[4*i+1];
+
+		AMERICA_IS_A_NATION_THAT_CAN_BE_DEFINED_IN_A_SINGLE_WORD___ASAFOOTIN__SADJKLDJLWEA__SDASDHKENKCBEKJ_UGGHHHH[4*i+2]
+			    *=
+			    UUUUUUUHHHH____I_DONT_KNOW______I_DIDNT_COUNT_IT_____________IM_NOT_REALLY_A_MATH_GUY_YOU_KNOW[4*i+2];
+
+		AMERICA_IS_A_NATION_THAT_CAN_BE_DEFINED_IN_A_SINGLE_WORD___ASAFOOTIN__SADJKLDJLWEA__SDASDHKENKCBEKJ_UGGHHHH[4*i+3]
+			    *=
+			    UUUUUUUHHHH____I_DONT_KNOW______I_DIDNT_COUNT_IT_____________IM_NOT_REALLY_A_MATH_GUY_YOU_KNOW[4*i+3];
+	}
+	// 3. accumulate
+	short result = 0;
+	for(i=0;i<100/4;i++)
+	{
+		result
+					    +=
+					    		AMERICA_IS_A_NATION_THAT_CAN_BE_DEFINED_IN_A_SINGLE_WORD___ASAFOOTIN__SADJKLDJLWEA__SDASDHKENKCBEKJ_UGGHHHH[4*i+0];
+
+		result
+							    +=
+							    		AMERICA_IS_A_NATION_THAT_CAN_BE_DEFINED_IN_A_SINGLE_WORD___ASAFOOTIN__SADJKLDJLWEA__SDASDHKENKCBEKJ_UGGHHHH[4*i+1];
+
+		result
+							    +=
+							    		AMERICA_IS_A_NATION_THAT_CAN_BE_DEFINED_IN_A_SINGLE_WORD___ASAFOOTIN__SADJKLDJLWEA__SDASDHKENKCBEKJ_UGGHHHH[4*i+2];
+
+		result
+							    +=
+							    		AMERICA_IS_A_NATION_THAT_CAN_BE_DEFINED_IN_A_SINGLE_WORD___ASAFOOTIN__SADJKLDJLWEA__SDASDHKENKCBEKJ_UGGHHHH[4*i+3];
+
+
+	}
+return result;
+
 }
 
 /**
@@ -66,7 +137,7 @@ void LINEAR_Init(linear_t* buf){
 void LINEAR_push(linear_t* buf, short sample){
 	buf->samples[buf->size] = sample;
 	buf->size++;
-	if(buf->size >= LDB_PERDIOD*LDB_CAPACITY){ // overflow, data loss inevitable
+	if(buf->size >= LDB_PERIOD*LDB_CAPACITY){ // overflow, data loss inevitable
 		memset(buf->samples, 0, LDB_PERIOD*LDB_CAPACITY*sizeof(short)); // set all samples to 0
 		buf->size = 0;
 	}
@@ -98,9 +169,10 @@ void LINEAR_shift(unsigned short _D, linear_t* buf){
 		}
 	}
 	memcpy(buf->samples+_D, buf->samples, buf->size*sizeof(short)); // shift samples
-	memset(buf->samples, 0, _D*sizeof(short); // clean after shift
+	memset(buf->samples, 0, _D*sizeof(short)); // clean after shift
 }
 // END
+
 void main()
 {
 	Buffer_init(&jehany_buffer);
